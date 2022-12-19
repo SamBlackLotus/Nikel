@@ -56,7 +56,7 @@
                         </div>
                         <div class="row">
                             <div>
-                                <p class="col text-center mt-2 form-text">Ainda não tem conta? <spam class="link-default">Criar conta.</spam></p>
+                                <p class="text-center mt-2 form-text" data-bs-toggle="modal" data-bs-target="#exampleModal">Ainda não tem conta? <span class="link-default">Criar conta.</span></p>
                             </div>
                         </div>
                         <div class="row">
@@ -74,7 +74,40 @@
                 </div>
             </div>
         </div>
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="exampleModalLabel">Crie sua conta</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <form>
+                    <div class="modal-body">
+                            <div class="mb-3">
+                                <label for="exampleInputEmail1" class="form-label">E-mail</label>
+                                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                                <div id="emailHelp" class="form-text">Utilize seu e-mail para fazer login.</div>
+                            </div>
+                            <div class="mb-3">
+                                <label for="exampleInputPassword1" class="form-label">Senha</label>
+                                <input type="password" class="form-control" id="exampleInputPassword1">
+                            </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                        <button type="submit" class="btn button-default">Criar conta</button>
+                    </div>
+                    </form>
+                </div>
+            </div>
+        </div>
     </main>
-    
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"
+        integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V"
+        crossorigin="anonymous"></script>   
 </body>
 </html>
